@@ -1,5 +1,4 @@
-// VARIABLES
-
-var producto = 'Monitor de 20"';
-
-console.log(producto);
+const botton = document.querySelector("#boton");
+botton.addEventListener("click", function () {
+  console.log("diste click");
+});
