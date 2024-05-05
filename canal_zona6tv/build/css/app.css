@@ -370,3 +370,145 @@ img {
   height: auto;
   display: block;
 }
+
+.layout {
+  position: absolute;
+  inset: 0;
+}
+@media (min-width: 290px) {
+  .layout {
+    margin: 0 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+header {
+  grid-column: 2/3;
+  text-align: center;
+  margin: 0;
+}
+header h1 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 290px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 480px) {
+  header h1 {
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  header h1 {
+    font-size: 4rem;
+    padding-bottom: 0;
+  }
+}
+header p {
+  padding-bottom: 3rem;
+  margin: 0;
+  color: #ff770a;
+  font-weight: 600;
+}
+@media (min-width: 480px) {
+  header p {
+    margin: 0 90px;
+  }
+}
+@media (min-width: 1400px) {
+  header p {
+    font-size: 2rem;
+  }
+}
+
+.layout__content {
+  grid-column: 2/3;
+  padding-top: 4rem;
+  margin: 0 auto;
+}
+@media (min-width: 290px) {
+  .layout__content {
+    width: 13rem;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 480px) {
+  .layout__content {
+    width: 15rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .layout__content {
+    width: 25rem;
+  }
+}
+
+nav {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+nav a {
+  transition: all 300ms ease-in-out;
+}
+nav a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  transition: 0.4s;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  height: 48px;
+  padding: 0 16px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #ff770a;
+  color: #ffffff;
+}
+@media (min-width: 290px) {
+  .button {
+    width: 270px;
+  }
+}
+@media (min-width: 1400px) {
+  .button {
+    width: 400px;
+  }
+}
+
+footer {
+  grid-column: 2/3;
+  text-align: center;
+  font-size: 1.5rem;
+}
+footer a {
+  cursor: pointer;
+  color: #ff770a;
+}

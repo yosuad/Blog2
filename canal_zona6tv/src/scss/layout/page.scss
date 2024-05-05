@@ -1,2 +1,140 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
+
+.layout {
+  position: absolute;
+  inset: 0;
+
+  @include m.telefono-mini {
+    margin: 0 2rem;
+  }
+
+  @include m.desktopXL {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+header {
+  grid-column: 2/3;
+  text-align: center;
+  margin: 0;
+
+  h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+
+    @include m.telefono-mini {
+      font-size: 2rem;
+    }
+
+    @include m.telefono {
+      font-size: 3rem;
+      padding-bottom: 1.5rem;
+    }
+
+    @include m.desktopXL {
+      font-size: 4rem;
+      padding-bottom: 0;
+    }
+  }
+
+  p {
+    padding-bottom: 3rem;
+    margin: 0;
+    color: v.$color-principal;
+    font-weight: 600;
+
+    @include m.telefono {
+      margin: 0 90px;
+    }
+
+    @include m.desktopXL {
+      font-size: 2rem;
+    }
+  }
+}
+
+.layout__content {
+  grid-column: 2/3;
+  padding-top: 4rem;
+  margin: 0 auto;
+
+  @include m.telefono-mini {
+    width: 13rem;
+    padding-top: 2rem;
+  }
+
+  @include m.telefono {
+    width: 15rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+
+  @include m.tablet {
+    width: 25rem;
+  }
+}
+
+nav {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+
+  a {
+    transition: all 300ms ease-in-out;
+    &:hover {
+      color: v.$blanco;
+      transform: scale(1.1);
+      // line-height: 43px;
+
+      // filter: brightness(80%);
+      transition: 0.4s;
+      padding-right: 24px;
+      padding-left: 8px;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  height: 48px;
+  padding: 0 16px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: v.$color-principal;
+  color: v.$blanco;
+
+  @include m.telefono-mini {
+    width: 270px;
+  }
+
+  @include m.desktopXL {
+    width: 400px;
+  }
+}
+
+footer {
+  grid-column: 2/3;
+  text-align: center;
+  font-size: 1.5rem;
+
+  a {
+    cursor: pointer;
+    color: v.$color-principal;
+  }
+}
