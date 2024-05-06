@@ -372,18 +372,37 @@ img {
 }
 
 .layout {
-  position: absolute;
+  position: relative;
   inset: 0;
 }
 @media (min-width: 290px) {
   .layout {
     margin: 0 2rem;
+    padding-bottom: 14rem;
+  }
+}
+@media (min-width: 480px) {
+  .layout {
+    padding-bottom: 18rem;
+  }
+}
+@media (min-width: 768px) {
+  .layout {
+    padding-bottom: 23rem;
+  }
+}
+@media (min-width: 1200px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 10rem;
   }
 }
 @media (min-width: 1400px) {
   .layout {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 11rem;
   }
 }
 
@@ -418,6 +437,14 @@ header p {
   margin: 0;
   color: #ff770a;
   font-weight: 600;
+}
+@media (min-width: 290px) {
+  header p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 23px;
+    margin: 0 16px;
+  }
 }
 @media (min-width: 480px) {
   header p {
@@ -507,6 +534,23 @@ footer {
   grid-column: 2/3;
   text-align: center;
   font-size: 1.5rem;
+  position: absolute;
+  width: 100%;
+}
+@media (min-width: 290px) {
+  footer {
+    bottom: 10px;
+  }
+}
+@media (min-width: 480px) {
+  footer {
+    bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    bottom: 50px;
+  }
 }
 footer a {
   cursor: pointer;
