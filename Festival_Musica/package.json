@@ -15,8 +15,11 @@
   "author": "Jose Luis Baena",
   "license": "ISC",
   "devDependencies": {
+    "glob": "^10.3.12",
+    "glop": "^0.3.1",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.76.0"
+    "sass": "^1.76.0",
+    "sharp": "^0.33.3"
   }
 }

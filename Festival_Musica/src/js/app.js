@@ -24,7 +24,7 @@ function crearGaleria() {
 
   for (let i = 1; i <= cantidad_imagenes; i++) {
     const imagen = document.createElement("IMG");
-    imagen.src = `src/img/gallery/full/${i}.jpg`;
+    imagen.src = `src/img/gallery/thumb/${i}.jpg`;
     imagen.alt = `Imagen Galería`;
 
     // EVENT HANLER = Identificar la imagen que se le da click
