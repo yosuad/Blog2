@@ -371,6 +371,33 @@ img {
   display: block;
 }
 
+body {
+  opacity: 10;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/canal_zona6tv/src/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+}
+
+.layout__content {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100rem;
+}
+
+.content__logo {
+  width: 20rem;
+}
+
 .layout {
   position: relative;
   inset: 0;
@@ -454,30 +481,6 @@ header p {
 @media (min-width: 1400px) {
   header p {
     font-size: 2rem;
-  }
-}
-
-.layout__content {
-  grid-column: 2/3;
-  padding-top: 4rem;
-  margin: 0 auto;
-}
-@media (min-width: 290px) {
-  .layout__content {
-    width: 13rem;
-    padding-top: 2rem;
-  }
-}
-@media (min-width: 480px) {
-  .layout__content {
-    width: 15rem;
-    padding-top: 2rem;
-    font-size: 3rem;
-  }
-}
-@media (min-width: 768px) {
-  .layout__content {
-    width: 25rem;
   }
 }
 
