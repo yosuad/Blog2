@@ -1,5 +1,35 @@
 :root {
-  --color-principal: #4f4aa6;
-  --color-secundario: #48ca95;
-  --color-gris: #f7f7f7;
+  --primary-color: #4f4aa6;
+  --secondary-color: #48ca95;
+  --bg-color: #f7f7f7;
+}
+
+/* Importar Tipografias */
+@font-face {
+  font-family: poppins;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf");
+}
+/* FIN Importar Tipografias */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+header {
+  background-image: url("../assets/images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
