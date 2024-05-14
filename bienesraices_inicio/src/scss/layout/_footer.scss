@@ -1,0 +1,19 @@
+.layout__footer {
+  padding: 2rem;
+  background-color: $gris-color;
+
+  .footer__content {
+    padding-top: $separacion;
+  }
+
+  .footer__navbar a {
+    font-size: 1.8rem;
+    color: $blanco;
+    margin-right: 2rem;
+  }
+
+  .coppyright {
+    color: $blanco;
+    text-align: center;
+  }
+}

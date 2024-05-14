@@ -5,9 +5,14 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/scss:build/css",
-    "dev": "gulp dev"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp"
   },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
   "author": "wiquiweb",
   "license": "ISC",
   "devDependencies": {
