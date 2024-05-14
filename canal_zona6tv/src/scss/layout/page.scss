@@ -1,6 +1,6 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
-
+// BACKGROUND 1
 body {
   opacity: 10;
   background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
@@ -13,7 +13,7 @@ body {
 
   display: flex;
 }
-
+// BACKGROUND 2
 .layout__content {
   background-color: v.$blanco;
 
@@ -26,111 +26,51 @@ body {
   flex-direction: column;
   margin: 0 auto;
 
-  height: 100vh;
   width: 100rem;
+  height: 92.6rem;
 }
-
+// LOGO
 .content__logo {
   width: 20rem;
+  margin: 2rem auto;
 }
-
-.layout {
-  position: relative;
-
-  inset: 0;
-
-  @include m.telefono-mini {
-    margin: 0 2rem;
-    padding-bottom: 14rem;
-  }
-
-  @include m.telefono {
-    padding-bottom: 18rem;
-  }
-
-  @include m.tablet {
-    padding-bottom: 23rem;
-  }
-
-  @include m.desktop {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding-bottom: 10rem;
-  }
-
-  @include m.desktopXL {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding-bottom: 11rem;
-  }
-}
-
+// H1 P
 header {
-  grid-column: 2/3;
   text-align: center;
-  margin: 0;
 
   h1 {
     margin: 0;
-    padding-bottom: 0.5rem;
-
-    @include m.telefono-mini {
-      font-size: 2rem;
-    }
-
-    @include m.telefono {
-      font-size: 3rem;
-      padding-bottom: 1.5rem;
-    }
-
-    @include m.desktopXL {
-      font-size: 4rem;
-      padding-bottom: 0;
-    }
   }
 
   p {
-    padding-bottom: 3rem;
-    margin: 0;
+    font-weight: 400;
+    line-height: 1;
     color: v.$color-principal;
-    font-weight: 600;
-
-    @include m.telefono-mini {
-      font-size: 2rem;
-      font-weight: 300;
-      line-height: 23px;
-      margin: 0 16px;
-    }
-
-    @include m.telefono {
-      margin: 0 90px;
-    }
-
-    @include m.desktopXL {
-      font-size: 2rem;
-    }
+    margin: 0;
+    padding-bottom: 5rem;
+  }
+  span {
+    display: block;
   }
 }
 
 nav {
-  grid-column: 2/3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding-bottom: 3rem;
+  // gap: 2rem;
+  height: 40rem;
+  justify-content: space-between;
 
   a {
     transition: all 300ms ease-in-out;
     &:hover {
       color: v.$blanco;
+      color: black;
       transform: scale(1.1);
-      // line-height: 43px;
-
-      // filter: brightness(80%);
       transition: 0.4s;
-      padding-right: 24px;
+      padding-right: 2.4rem;
       padding-left: 8px;
+      box-shadow: 0px 2px 4px rgba(#a5d81a, 0.2);
     }
   }
 }
@@ -138,6 +78,7 @@ nav {
 .button {
   display: inline-block;
   text-decoration: none;
+  width: 400px;
   height: 48px;
   padding: 0 16px;
   text-align: center;
@@ -154,35 +95,11 @@ nav {
   box-sizing: border-box;
   background-color: v.$color-principal;
   color: v.$blanco;
-
-  @include m.telefono-mini {
-    width: 270px;
-  }
-
-  @include m.desktopXL {
-    width: 400px;
-  }
 }
 
 footer {
-  grid-column: 2/3;
-  text-align: center;
   font-size: 1.5rem;
-  position: absolute;
-
-  width: 100%;
-
-  @include m.telefono-mini {
-    bottom: 10px;
-  }
-
-  @include m.telefono {
-    bottom: 10px;
-  }
-
-  @include m.tablet {
-    bottom: 50px;
-  }
+  margin-top: 5rem;
 
   a {
     cursor: pointer;

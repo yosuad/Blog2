@@ -390,122 +390,55 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  height: 100vh;
   width: 100rem;
+  height: 92.6rem;
 }
 
 .content__logo {
   width: 20rem;
-}
-
-.layout {
-  position: relative;
-  inset: 0;
-}
-@media (min-width: 290px) {
-  .layout {
-    margin: 0 2rem;
-    padding-bottom: 14rem;
-  }
-}
-@media (min-width: 480px) {
-  .layout {
-    padding-bottom: 18rem;
-  }
-}
-@media (min-width: 768px) {
-  .layout {
-    padding-bottom: 23rem;
-  }
-}
-@media (min-width: 1200px) {
-  .layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding-bottom: 10rem;
-  }
-}
-@media (min-width: 1400px) {
-  .layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding-bottom: 11rem;
-  }
+  margin: 2rem auto;
 }
 
 header {
-  grid-column: 2/3;
   text-align: center;
-  margin: 0;
 }
 header h1 {
   margin: 0;
-  padding-bottom: 0.5rem;
-}
-@media (min-width: 290px) {
-  header h1 {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 480px) {
-  header h1 {
-    font-size: 3rem;
-    padding-bottom: 1.5rem;
-  }
-}
-@media (min-width: 1400px) {
-  header h1 {
-    font-size: 4rem;
-    padding-bottom: 0;
-  }
 }
 header p {
-  padding-bottom: 3rem;
-  margin: 0;
+  font-weight: 400;
+  line-height: 1;
   color: #ff770a;
-  font-weight: 600;
+  margin: 0;
+  padding-bottom: 5rem;
 }
-@media (min-width: 290px) {
-  header p {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 23px;
-    margin: 0 16px;
-  }
-}
-@media (min-width: 480px) {
-  header p {
-    margin: 0 90px;
-  }
-}
-@media (min-width: 1400px) {
-  header p {
-    font-size: 2rem;
-  }
+header span {
+  display: block;
 }
 
 nav {
-  grid-column: 2/3;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding-bottom: 3rem;
+  height: 40rem;
+  justify-content: space-between;
 }
 nav a {
   transition: all 300ms ease-in-out;
 }
 nav a:hover {
   color: #ffffff;
+  color: black;
   transform: scale(1.1);
   transition: 0.4s;
-  padding-right: 24px;
+  padding-right: 2.4rem;
   padding-left: 8px;
+  box-shadow: 0px 2px 4px rgba(165, 216, 26, 0.2);
 }
 
 .button {
   display: inline-block;
   text-decoration: none;
+  width: 400px;
   height: 48px;
   padding: 0 16px;
   text-align: center;
@@ -522,38 +455,10 @@ nav a:hover {
   background-color: #ff770a;
   color: #ffffff;
 }
-@media (min-width: 290px) {
-  .button {
-    width: 270px;
-  }
-}
-@media (min-width: 1400px) {
-  .button {
-    width: 400px;
-  }
-}
 
 footer {
-  grid-column: 2/3;
-  text-align: center;
   font-size: 1.5rem;
-  position: absolute;
-  width: 100%;
-}
-@media (min-width: 290px) {
-  footer {
-    bottom: 10px;
-  }
-}
-@media (min-width: 480px) {
-  footer {
-    bottom: 10px;
-  }
-}
-@media (min-width: 768px) {
-  footer {
-    bottom: 50px;
-  }
+  margin-top: 5rem;
 }
 footer a {
   cursor: pointer;
