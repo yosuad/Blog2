@@ -1,0 +1,42 @@
+@include tablet {
+  .house__content {
+    @include grid(3, 2rem);
+  }
+}
+
+.house__card {
+  background-color: rgba($gris-color, 0.1);
+  //   border: 1px solid darken($gris-color, 10);
+  border: 1px solid rgba($gris-color, 0.3);
+
+  .house__info {
+    padding: 2rem;
+  }
+  h3,
+  p {
+    margin: 0;
+  }
+  .house__price {
+    color: $secundary-color;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+}
+
+.house__icon {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    flex: 1;
+    display: flex;
+    img {
+      flex: 0 0 5rem;
+      margin-right: 1rem;
+    }
+    p {
+      font-weight: $black;
+    }
+  }
+}

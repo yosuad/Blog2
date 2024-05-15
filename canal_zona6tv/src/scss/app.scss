@@ -1,2 +1,7 @@
-@forward "base";
-@forward "layout";
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixins";
+@import "base/globales";
+
+// UI
+@import "layout/page";
