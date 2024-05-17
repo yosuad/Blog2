@@ -3,10 +3,17 @@
 @import "base/mixins";
 @import "base/globales";
 @import "base/utilidades";
+@import "base/botones";
 
 /* UI */
 @import "layout/header";
 @import "layout/navegacion";
 @import "layout/cards";
 @import "layout/house";
+@import "layout/contacto";
+@import "layout/inferior";
+@import "layout/testimoniales";
 @import "layout/footer";
+
+/* PAGINAS INTERNAS */
+@import "internas/nosotros";
