@@ -40,7 +40,7 @@ export function js(done) {
 
 export async function imagenes(done) {
   const srcDir = "./src/img";
-  const buildDir = "./build/img/processed";
+  const buildDir = "./build/img";
   const images = await glob("./src/img/**/*");
 
   images.forEach((file) => {

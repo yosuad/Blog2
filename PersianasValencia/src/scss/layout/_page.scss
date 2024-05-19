@@ -1,0 +1,23 @@
+body {
+  margin: 5rem;
+}
+.layout {
+  background-color: $blanco;
+  border: 1px solid black;
+  display: flex;
+
+  .content__video {
+    border: 1px solid red;
+    flex: 1;
+    margin-top: 20rem;
+  }
+
+  .content__cards {
+    flex: 1;
+  }
+}
+
+video {
+  width: 50%;
+  margin-left: 25rem;
+}
