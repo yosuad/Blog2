@@ -14,9 +14,8 @@
   <body>
     <div class="layout">
       <!-- CONTENEDOR VIDEO -->
-
-      <div class="content__video">
-        <div class="content__vide">
+      <div class="layout__content">
+        <div class="content__video">
           <video autoplay muted loop>
             <source src="assets/video/dj.mp4" type="video/mp4" />
             <source src="assets/video/dj.ogv" type="video/ogg" />
@@ -25,45 +24,99 @@
         </div>
       </div>
       <!-- CONTENEDOR CARD -->
-      <div class="content__cards">
-        <!-- <picture>
+      <div class="layout__cards">
+        <div class="cards__logo">
+          <picture>
             <source srcset="build/img/logo.webp" type="image/webp" />
             <source srcset="build/img/logo.jpg" type="image/jpg" />
             <img loading="lazy" src="build/img/logo.jpg" alt="imagen anuncio" />
-          </picture> 
-          <a
-            class="button button-slack"
-            href="https://www.persianasycortinasvalencia.com/"
-            target="_blank"
-            ><img class="icon" src="icons/internet.svg" /> Página</a
-          >
-          <a
-            class="button button-slack"
-            href="https://www.instagram.com/persianas_valencia/"
-            target="_blank"
-            ><img class="icon" src="icons/instagram.svg" />Instagram</a
-          >
-          <a
-            class="button button-slack"
-            href="https://www.facebook.com/Persianas-y-Cortinas-Valencia-103162305797297"
-            target="_blank"
-            ><img class="icon" src="icons/facebook.svg" />Facebook</a
-          >
-          <a
-            class="button button-slack"
-            href="https://api.whatsapp.com/send?phone=573153575059&text=Bienvenido!!%20como%20puedo%20ayudarte%0Aenv%C3%ADanos%20tu%20nombre%20%20y%20en%20un%20momento%20te%20responderemos"
-            target="_blank"
-            ><img class="icon" src="icons/whatsapp.svg" />Whatsapp</a
-          >
-          <a
-            class="button button-slack"
-            href="https://www.persianasycortinasvalencia.com/cat%C3%A1logo"
-            target="_blank"
-            ><img class="icon" src="icons/portafolio.svg" />Portafolio</a
-          >
-          -->
+          </picture>
+        </div>
+
+        <div class="cards__button">
+          <ul class="button__list">
+            <li>
+              <a
+                class="button"
+                href="https://www.persianasycortinasvalencia.com/"
+                target="_blank"
+              >
+                <img
+                  class="icon"
+                  src="build/icon/internet.svg"
+                  alt="Página web"
+                />
+                Página</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="button"
+                href="https://www.instagram.com/persianas_valencia/"
+                target="_blank"
+              >
+                <img
+                  class="icon"
+                  src="build/icon/instagram.svg"
+                  alt="Página web"
+                />
+                Instagram</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="button"
+                href="https://www.facebook.com/Persianas-y-Cortinas-Valencia-103162305797297"
+                target="_blank"
+              >
+                <img
+                  class="icon"
+                  src="build/icon/facebook.svg"
+                  alt="Página web"
+                />
+                Facebook</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="button"
+                href="https://api.whatsapp.com/send?phone=573153575059&text=Bienvenido!!%20como%20puedo%20ayudarte%0Aenv%C3%ADanos%20tu%20nombre%20%20y%20en%20un%20momento%20te%20responderemos"
+                target="_blank"
+              >
+                <img
+                  class="icon"
+                  src="build/icon/whatsapp.svg"
+                  alt="Página web"
+                />
+                Whatsapp</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="button"
+                href="https://www.persianasycortinasvalencia.com/cat%C3%A1logo"
+                target="_blank"
+              >
+                <img
+                  class="icon"
+                  src="build/icon/portafolio.svg"
+                  alt="Página web"
+                />
+                Portafolio</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+    <footer>
+      Copyright &copy; Desarrollado por
+      <a href="https://wiquiweb.com" target="_blank">wiquiweb</a>
+    </footer>
     <!-- CARGAR JS -->
 
     <script src="build/js/bundle.min.js"></script>

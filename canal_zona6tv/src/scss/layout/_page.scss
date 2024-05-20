@@ -172,6 +172,15 @@ nav {
   background-color: $color-principal;
   color: $blanco;
 
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+
   @include telefono-mini {
     width: 35rem;
   }

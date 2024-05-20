@@ -4,20 +4,95 @@ body {
 .layout {
   background-color: $blanco;
   border: 1px solid black;
+  border-radius: 1rem;
   display: flex;
 
-  .content__video {
+  .layout__content {
     border: 1px solid red;
     flex: 1;
     margin-top: 20rem;
   }
-
-  .content__cards {
-    flex: 1;
-  }
 }
 
 video {
-  width: 50%;
-  margin-left: 25rem;
+  width: 100%;
+}
+
+.layout__cards {
+  flex: 1;
+
+  .cards__logo {
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+}
+
+.cards__button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .button__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+li {
+  border: 0.2rem solid $primari-color;
+  border-radius: 0.8rem;
+  -webkit-transition: 0.25s;
+  transition: 1s;
+  &:hover {
+    border-radius: 0rem;
+    box-shadow: inset -9em 0 0 0 $primari-color, inset 9em 0 0 0 $primari-color;
+  }
+  &:hover .button {
+    color: $blanco;
+    border-radius: 0.8rem;
+  }
+}
+
+a.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5rem;
+  // justify-content: center;
+  gap: 4rem;
+
+  img {
+    width: 4rem;
+  }
+}
+
+.button {
+  color: $primari-color;
+  display: inline-block;
+  text-decoration: none;
+  height: 4.8rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.8rem;
+  width: 30rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 }
