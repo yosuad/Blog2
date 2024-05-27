@@ -1,5 +1,11 @@
 @use "variables" as v;
 
+@mixin telefono-mini {
+  @media (min-width: v.$telefono-mini) {
+    @content;
+  }
+}
+
 @mixin telefono {
   @media (min-width: v.$telefono) {
     @content;

@@ -9,12 +9,22 @@ body {
   border-radius: 1rem;
   overflow: hidden;
 
+  @include telefono-mini {
+    padding: 0 0 0.4rem 0;
+  }
+
+  @include telefono {
+    padding: 0 0 1.4rem 0;
+  }
+
   @include tablet {
     display: flex;
   }
 
   @include desktop {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    margin: 4rem 6rem;
+    padding: 0;
   }
 
   .layout__content {
@@ -34,7 +44,11 @@ body {
 video {
   width: 100%;
   @include desktop {
-    width: 92rem;
+    width: 79rem;
+  }
+
+  @include desktopXL {
+    width: 83rem;
   }
 }
 
@@ -42,15 +56,19 @@ video {
   flex: 1;
 
   .cards__logo {
-    width: 25rem;
-
     margin-top: 3rem;
 
     @include telefono-mini {
+      width: 31rem;
       margin: 3.6rem auto;
     }
 
     @include tablet {
+      margin: 2.8rem auto;
+    }
+
+    @include desktop {
+      width: 25rem;
       margin: 0 auto;
     }
   }
@@ -69,6 +87,14 @@ video {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    @include tablet {
+      gap: 4rem;
+    }
+
+    @include desktop {
+      gap: 3rem;
+    }
   }
 }
 
@@ -81,6 +107,16 @@ li {
   &:hover {
     border-radius: 0rem;
     box-shadow: inset -9em 0 0 0 $primari-color, inset 9em 0 0 0 $primari-color;
+
+    @include tablet {
+      box-shadow: inset -13em 0 0 0 $primari-color,
+        inset 13em 0 0 0 $primari-color;
+    }
+
+    @include desktop {
+      box-shadow: inset -9em 0 0 0 $primari-color,
+        inset 9em 0 0 0 $primari-color;
+    }
   }
 
   &:hover .button {
@@ -120,15 +156,14 @@ a.button {
 }
 
 .button {
+  font-size: 2rem;
   color: $primari-color;
   display: inline-block;
   text-decoration: none;
   height: 4.8rem;
-  padding: 0 1.6rem;
   text-align: center;
   vertical-align: middle;
   font-size: 1.8rem;
-  width: 30rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   white-space: nowrap;
@@ -136,10 +171,23 @@ a.button {
   border-radius: 0.8rem;
   cursor: pointer;
   box-sizing: border-box;
-}
 
-.st0 {
-  fill: red;
+  @include telefono-mini {
+    width: 30rem;
+    padding: 0 1.6rem;
+  }
+
+  @include tablet {
+    height: 6.8rem;
+    width: 45rem;
+    padding: 0 8rem;
+  }
+
+  @include desktop {
+    height: 4.8rem;
+    width: 30rem;
+    padding: 0 1.6rem;
+  }
 }
 
 footer {
@@ -147,12 +195,25 @@ footer {
   justify-content: center;
   margin-top: 5rem;
 
+  @include telefono-mini {
+    background-color: $blanco;
+    margin: 0;
+    padding: 3rem;
+    font-size: 1.6rem;
+  }
+
   @include telefono {
+    background-color: $blanco;
+  }
+
+  @include tablet {
+    padding: 3rem 0 11rem 0;
     background-color: $blanco;
   }
 
   @include desktop {
     background-color: transparent;
+    padding: 0;
   }
 
   a {
