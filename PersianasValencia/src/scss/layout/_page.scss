@@ -163,7 +163,6 @@ a.button {
   height: 4.8rem;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   white-space: nowrap;
@@ -173,6 +172,7 @@ a.button {
   box-sizing: border-box;
 
   @include telefono-mini {
+    font-size: 2rem;
     width: 30rem;
     padding: 0 1.6rem;
   }
